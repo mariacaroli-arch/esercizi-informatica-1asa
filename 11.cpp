@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-main ()
+int main ()
 {
 	bool liceo;
 	
@@ -9,7 +9,7 @@ main ()
 	cin>>liceo;
 	
 	if(liceo==true)		//in che altro modo posso scrivere?
-		cout<<endl<<"hai risposto si'";
+		cout<<endl<<"Hai risposto si' \n";
 	else
-		cout<<endl<<"hai risposto no";
+		cout<<endl<<"Hai risposto no \n";
 }
