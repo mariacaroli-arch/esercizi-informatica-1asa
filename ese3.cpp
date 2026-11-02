@@ -3,13 +3,14 @@
 using namespace std;
 
 int main()
-{ float prezzoMensile;
-  float prezzoAnnuale= prezzoMensile * 12;
+{ float prezzoMensile=50;
+  float prezzoAnnuale;
   int eta;
   bool societaSportiva;
 
   cout<<"Quani anni hai?";
-  if(eta<=12 && eta>=85)
+  cin>>eta;
+  if(eta<=12 || eta>=85)
   {
     return 0;
   }
@@ -18,9 +19,12 @@ int main()
     prezzoMensile *= 0.97;
     cout<<prezzoMensile;
   }
+  cout<<"Fai parte di una societa sportiva?";
+  cin>>societaSportiva;
   if(societaSportiva==true)
   {
     prezzoMensile *= 0.85;  }
+prezzoAnnuale = prezzoMensile *12;    
 cout<<prezzoAnnuale;
 
 }
