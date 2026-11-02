@@ -27,3 +27,23 @@ Run the compiled program:
 ```
 
 When prompted, enter `1` for yes or `0` for no, then press Enter.
+
+## Compile other files with the helper script
+
+Make the script executable once:
+
+```bash
+chmod +x compile.sh
+```
+
+Then compile any `.cpp` file in the folder by passing its name:
+
+```bash
+./compile.sh 13.cpp
+```
+
+This creates an executable named `13`. Run it with:
+
+```bash
+./13
+```
