@@ -8,6 +8,8 @@ int main()
   string continente;
   bool TravelCard;
   int posto;
+  bool milleMiglia;
+  int puntiMM;
 
   cout << "Hai la Travel Card? (1 = si, 0 = no) ";
   cin>>TravelCard;
@@ -29,7 +31,26 @@ int main()
   {
     prezzoPartenza *= 0.90;
   }
+  if(posto == 2)
+  {
+   prezzoPartenza *= 0.95;
+  }
+ if(posto == 3)
+ {
+  prezzoPartenza *= 0.98;
+ }
+ cout<<"hai la tessera mille miglia?";
+ cin>>milleMiglia;
+ if(milleMiglia)
+ {
+  cout<<"quanti punti hai?";
+  cin>>puntiMM;
+  if(puntiMM>=500)
+  {
+    prezzoPartenza *= 0.96;
+  }
+ }
 
   cout << "Il prezzo finale del viaggio e': " << prezzoPartenza << endl;
-  return 0;
+   return 0;
 }
