@@ -29,6 +29,6 @@ int main()
  {
     totale*= 0.90;
  }
- prezzomedio=totale::studenti;
+ prezzomedio=totale/studenti;
  cout<<fixed<<setprecision(3)<<"Il totale da pagare è:"<<totale<<endl<<"ogni studente dovrà pagare:"<<prezzomedio;
 }
